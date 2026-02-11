@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+export const runtime = 'edge';
+
 const EXTERNAL_API_URL = 'https://stockhelper-dxoc.onrender.com/api/intraday-diff';
 
 export async function POST(request: NextRequest) {
